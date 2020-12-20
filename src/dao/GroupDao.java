@@ -240,7 +240,7 @@ public class GroupDao {
 	
 	/**
 	 * 插入一个群组并返回是否插入成功
-	 * @param user
+	 * @param group
 	 * @return
 	 */
 	public boolean insertGroup(Group group) {
@@ -287,7 +287,7 @@ public class GroupDao {
 	
 	/**
 	 * 将一个用户插入到群——人表中并返回是否插入成功
-	 * @param user
+	 * @param u_id
 	 * @param g_id
 	 * @return
 	 */

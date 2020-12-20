@@ -256,7 +256,7 @@ public class UserDao {
 
 	/**
 	 * 根据用户名返回一个User实例
-	 * @param parameter
+	 * @param username
 	 * @return
 	 */
 	public User getUserByUserName(String username) {

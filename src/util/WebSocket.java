@@ -135,7 +135,7 @@ public class WebSocket extends HttpServlet{
 				}
 			}else{
 				try {
-				
+
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -177,7 +177,7 @@ public class WebSocket extends HttpServlet{
 		}
 		/**
 		 * 这个方法与上面几个方法不一样。没有用注解，是根据自己需要添加的方法。
-		 * @param message
+		 * @param list
 		 * @throws IOException
 		 */
 		public void sendMessage(ArrayList<String> list) throws IOException{

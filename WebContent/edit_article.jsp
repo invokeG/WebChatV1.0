@@ -19,18 +19,18 @@
 <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.min.js"></script>
 <link rel=stylesheet href="ueditor/themes/default/css/ueditor.css">
 <script type="text/javascript" charset="uft-8" scr="ueditor/lang/zh-cn/zh-cn.js"></script>
-<style type="text/css">
-	div{
-		width="100%";
-	}
-</style>
+<%--<style type="text/css">--%>
+<%--	div{--%>
+<%--		width="100%";--%>
+<%--	}--%>
+<%--</style>--%>
 </head>
 <body>
 <%
 	User user=(User)session.getAttribute("User");	
 	//User user = (User)request.getAttribute("user");
 	System.out.println(" "+ user.toString());
-	String headImage_path = "C:\\Users\\jack\\Desktop\\head_image\\";
+	String headImage_path = "E:\\webChatSource\\head_image\\";
 	String id = user.getId()+"\\";
 	headImage_path+=id;	
 	headImage_path += "head.png";

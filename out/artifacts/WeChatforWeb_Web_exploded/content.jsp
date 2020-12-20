@@ -30,7 +30,7 @@
 	User user=(User)session.getAttribute("User");
 	//User user = (User)request.getAttribute("user");
 	System.out.println(" "+ user.toString());
-	String headImage_path = "C:\\Users\\jack\\Desktop\\head_image\\";
+	String headImage_path = "E:\\webChatSource\\head_image\\";
 	String id = user.getId()+"\\";
 	headImage_path+=id;	
 	headImage_path += "head.png";
@@ -149,7 +149,7 @@
 					<p><%=contentString %></p>
 					<article class="htmleaf-container">
 						<div id="content_container">
-							<div class="feed id="feed">
+							<div class="feed" id="feed">
 								<div class="heart" id="like" rel="like">
 									<a href="ArticleLikeServlet"></a>
 								</div>

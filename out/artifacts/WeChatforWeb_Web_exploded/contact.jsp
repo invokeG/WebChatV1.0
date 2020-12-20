@@ -48,7 +48,7 @@
 				          <ul>
 					            <li><a href="#" target="mainFrame">修改资料</a></li>
 					            <li><a href="friend.jsp?user" target="_blank">朋友圈</a></li>
-					            <li><a href="addporg.jsp" >添加好友/群</a></li>
+					            <li><a href="addporg.jsp?m_id=<%=user.getId()%>" >添加好友/群</a></li>
 					            <li><a href="ContactServlet?type=create&id=<%=user.getId()%>">创建群聊</a></li>
 					            <li><a href="#" target="mainFrame">意见反馈</a></li>
 					            <li><a href="friend.jsp?user" target="_blank">退出</a></li>
@@ -88,7 +88,7 @@
 					</div>
 				</div>
 				</div>
-		    <div id = "list_blow"  border:0px solid;">
+		    <div id = "list_blow"  border:0px solid;>
                
 						<div class = "contact_title">
                         <h4 >群组</h4>
@@ -103,7 +103,7 @@
 				%>
 					<div id="<%=list2.get(i).getId()%>" class="list_min_chat" ondblclick="goChat1(<%=list2.get(i).getId()%>)" onclick="show1('<%=list2.get(i).getId()%>','<%out.print(list2.get(i).getName());%>','<%if(user.getId().equals(list2.get(i).getC_id())){out.print("1");}else{out.print("0");}%>')">     
 						<div class="list_min_chat_avatar">
-							<img src="images/headImage.png"></a>
+							<img src="images/qun.png"></a>
 						</div>
 						<div class="list_min_chat_ext">
 							<p><%=list2.get(i).getN_m_date()%></p>
@@ -168,7 +168,7 @@
 				</div>
 				<div id="chatArea_main">
 				<div id="main_image">
-					<img id="show_pic" src="images/headImage.png">
+					<img id="show_pic" src="images/talk.png">
 				</div>
 				<div class="charArea_message">
 				<p id="t_name" style="color:#000000"></p>
@@ -179,17 +179,17 @@
 				</div>
 				</div>
 
-				<!-- <div id="chatArea_tool">	聊天工具栏						
-					<a class="wechat_face" ng-click="showEmojiPanel($event)" href="javascript:;" title="表情"></a>
-					<a class="wechat_screencut" mm-action-track="" track-type="['click']" ng-click="screenShot()" href="javascript:;" title="截屏"></a>
-					<a id="wechat_file" mm-action-track="" track-type="['click']" ng-click="sendClick($event)"  href="javascript:;" title="文件和图片"></a>
-				</div>
-								                 
-				<div id="chatArea_input_blank" contenteditable="true"></div>
-				<div id="chatArea_action">
-					<span>按下Ctrl+Enter换行</span>
-					<a class="btn btn_send" href="javascript:;" ng-click="sendTextMessage()">发送</a>
-				</div> -->
+<%--				<div id="chatArea_tool">	聊天工具栏--%>
+<%--					<a class="wechat_face" ng-click="showEmojiPanel($event)" href="javascript:;" title="表情"></a>--%>
+<%--					<a class="wechat_screencut" mm-action-track="" track-type="['click']" ng-click="screenShot()" href="javascript:;" title="截屏"></a>--%>
+<%--					<a id="wechat_file" mm-action-track="" track-type="['click']" ng-click="sendClick($event)"  href="javascript:;" title="文件和图片"></a>--%>
+<%--				</div>--%>
+
+<%--				<div id="chatArea_input_blank" contenteditable="true"></div>--%>
+<%--				<div id="chatArea_action">--%>
+<%--					<span>按下Ctrl+Enter换行</span>--%>
+<%--					<a class="btn btn_send" href="javascript:;" ng-click="sendTextMessage()">发送</a>--%>
+<%--				</div>--%>
 			</div>
 		</div>
 	</div>
@@ -215,7 +215,7 @@
 		
 		document.getElementById('bbb1').innerHTML = "<input type='button' class='frm_buttom1' value='发送消息' onclick='btclick1("+g_id+")'>";
 		document.getElementById('bbb2').innerHTML = "<input type='button' class='frm_buttom2' value='"+str1+"' onclick='btclick2("+g_id+")'>";
-		document.getElementById('show_pic').src = "images/headImage.png";
+		document.getElementById('show_pic').src = "images/qun.png";//images/headImage.png
 		
 		document.getElementById("bbb1").style.display='block';
 		document.getElementById("bbb2").style.display='block';

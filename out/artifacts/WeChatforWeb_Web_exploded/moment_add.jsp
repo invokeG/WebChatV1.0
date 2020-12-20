@@ -21,11 +21,11 @@
 <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.min.js"></script>
 <link rel=stylesheet href="ueditor/themes/default/css/ueditor.css">
 <script type="text/javascript" charset="uft-8" scr="ueditor/lang/zh-cn/zh-cn.js"></script>
-<style type="text/css">
-	div{
-		width="100%";
-	}
-</style>
+<%--<style type="text/css">--%>
+<%--	div{--%>
+<%--		width="100%";--%>
+<%--	}--%>
+<%--</style>--%>
 
 </head>
 <body>

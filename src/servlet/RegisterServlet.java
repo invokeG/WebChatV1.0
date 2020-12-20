@@ -54,8 +54,8 @@ public class RegisterServlet extends HttpServlet {
 		String phonenumber = request.getParameter("phonenumber");
 		
 		try{
-	       	BufferedInputStream in = new BufferedInputStream(new FileInputStream("/WebContent/images/headImage.png"));//E:\fileHuanCun\web\WeChatforWeb\WebContent\images\headImage.png
-        	String p_headImage = "/WebContent/images/headImage/";
+	       	BufferedInputStream in = new BufferedInputStream(new FileInputStream("images/headImage.png"));//E:\fileHuanCun\web\WeChatforWeb\WebContent\images\headImage.png
+        	String p_headImage = "images/headImage/";
         	p_headImage += id+".png"; 
     		BufferedOutputStream output = new BufferedOutputStream(new FileOutputStream(p_headImage));
     		int i;

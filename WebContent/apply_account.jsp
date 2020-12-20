@@ -20,7 +20,7 @@
 <%
 	User user = (User)request.getAttribute("user");
 	//System.out.println(" "+ user.toString());
-	String headImage_path = "C:\\Users\\jack\\Desktop\\head_image\\";
+	String headImage_path = "E:\\webChatSource\\head_image\\";
 	String id = user.getId()+"\\";
 	headImage_path+=id;	
 	headImage_path += "head.png";

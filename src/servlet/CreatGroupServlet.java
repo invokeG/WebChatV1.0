@@ -53,8 +53,8 @@ public class CreatGroupServlet extends HttpServlet {
 			return;
 		}
 		try{
-        	BufferedInputStream in = new BufferedInputStream(new FileInputStream("C:\\Users\\jack\\eclipse-workspace\\Web_ClassDesign\\WebContent\\images\\headImage.png")); 
-        	String p_headImage = "C:\\Users\\jack\\eclipse-workspace\\Web_ClassDesign\\WebContent\\images\\groupImage\\";
+        	BufferedInputStream in = new BufferedInputStream(new FileInputStream("images/headImage.png"));
+        	String p_headImage = "images/groupImage";
         	p_headImage += group.getId()+".png"; 
         	System.out.println(p_headImage);
     		BufferedOutputStream output = new BufferedOutputStream(new FileOutputStream(p_headImage));

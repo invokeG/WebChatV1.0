@@ -67,7 +67,7 @@
             <button  type="submit" class="frm_buttom1" style="margin-top:50px" >确定</button>
 
 
-            </p>
+            </div>
         </form>
     </div>
     	<script type="text/javascript">

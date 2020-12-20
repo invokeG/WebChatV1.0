@@ -4,18 +4,18 @@ function sendTextMessage1(){
 		return;
 	}
 /*	alert(document.getElementById("chatArea_input_blank").innerHTML);*/
-	var str = document.getElementById("chatArea_input_blank").innerHTML;
-	var textarea = document.getElementById("Message");
-	var myhtml = "<div class='m_contact'><div class='m_contact_time'><p>"+getNowFormatDate()+"</p></div><div class='m_actor'><img src='images/headImage.png'></div><div class='m_message'><p>"+str+"</p></div></div>"
+	const str = document.getElementById("chatArea_input_blank").innerHTML;
+	const textarea = document.getElementById("Message");
+	const myhtml = "<div class='m_contact'><div class='m_contact_time'><p>" + getNowFormatDate() + "</p></div><div class='m_actor'><img src='images/headImage.png'></div><div class='m_message'><p>" + str + "</p></div></div>";
 	textarea.innerHTML+=myhtml;
 	add();
 	document.getElementById("chatArea_input_blank").innerHTML="";
 	if(document.getElementById("chat_type").value!=null){
 		if(document.getElementById("chat_obj").value!=null){
-			var chat_obj = document.getElementById("chat_obj").value;
-			var chat_type = document.getElementById("chat_type").value;
-			var con_message =str;
-		    websocket.send(chat_obj+','+chat_type+','+con_message);
+			const chat_obj = document.getElementById("chat_obj").value;
+			const chat_type = document.getElementById("chat_type").value;
+			const con_message = str;
+			websocket.send(chat_obj+','+chat_type+','+con_message);
 		}
 	}
 }

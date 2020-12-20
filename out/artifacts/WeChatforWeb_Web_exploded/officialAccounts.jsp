@@ -32,7 +32,7 @@
 			<div id="list">
 				<div id="list_hd">
 					<div id="actor">
-						<img src=<%=headImage_path%>>
+						<img src=<%=user.getHeadImage()%>>
 					</div>
 					<div id="info_icon">
 						<a href="#" id="wechat_add"></a>

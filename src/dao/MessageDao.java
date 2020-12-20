@@ -19,7 +19,6 @@ public class MessageDao {
 
 	/**
 	 * 根据群id取得该群所有消息
-	 * @param m_id
 	 * @param g_id
 	 * @return
 	 */
