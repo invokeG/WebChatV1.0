@@ -1,8 +1,8 @@
 package ov;
 /**
  * 
- * @author k
- *	∆¡±Œ¿‡
+ * @author k test20231126
+ *	√Ü√Å¬±√é√Ä√†
  *
  */
 public class Hide {
